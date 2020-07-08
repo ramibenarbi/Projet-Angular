@@ -1,0 +1,39 @@
+.style{
+  position: relative;
+  margin-left: 45%;
+}
+.ttt{
+  margin: .4rem 0;
+
+
+}
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+  margin: .4rem 0;
+}
+
+.note {
+  font-size: .8em;
+}
+#ggg{
+  border: 1px solid #ccc;
+  width: 110px;
+
+}
+.iddd {
+  position: relative;
+  left: 80%;
+  top:100%;
+
+}
+.kkk {
+  position: relative;
+
+  left: 10%;
+
+}

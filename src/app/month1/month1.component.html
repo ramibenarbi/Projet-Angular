@@ -1,0 +1,49 @@
+<section class="p-t-65 p-b-60 col-12">
+  <div class="p-t-65 p-b-60 col-sm-3 col-lg-12">
+<div class="container">
+  <div class="row">
+<div class='iddd'>
+    <button type="button" class="btn btn-dark"><a style='color:whitesmoke' [routerLink]="['/layout/type1']">Return To Type 1</a></button></div>
+
+
+
+  <div class="style">
+
+    <label>Select year:</label>
+    <input id='ggg' type='text' [(ngModel)]="year" >
+<label>Select month:</label>
+<select class="custom-select" [(ngModel)]="month" >
+  <option value="01">January</option>
+  <option value="02">february</option>
+  <option value="03">march</option>
+  <option value="04">April</option>
+  <option value="05">May</option>
+  <option value="06">June</option>
+  <option value="07">July</option>
+  <option value="08">August</option>
+  <option value="09">september</option>
+  <option value="10">October</option>
+  <option value="11">November</option>
+  <option value="12">December</option>
+</select>
+<br>
+<br>
+<button class="btn btn-primary" type="submit" (click)="chart()">Click</button>
+
+</div>
+<div class="kkk">The Average Efficiency OF This Month is {{avg.toFixed(3)}}</div>
+<div>
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+      </canvas>
+    </div>
+
+
+  </div>
+ </div>
+ </div>

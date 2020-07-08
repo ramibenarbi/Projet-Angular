@@ -1,0 +1,41 @@
+<div class='iddd'>
+    <button type="button" class="btn btn-dark"><a style='color:whitesmoke' [routerLink]="['/layout/type2']">
+      Return To Type 2</a></button></div>
+
+<div class="center-div">
+
+  <label for="fname">date</label>
+  <input type="date"  id="fname" #fname fname=[(fname)] >
+  <button type="submit"  class="btn btn-primary"  (click)=date(fname.value) >CLICK</button>
+<div style="display: block">
+ <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+ </canvas>
+</div>
+</div>
+<div class="center-div">
+<table class="table" border="4px">
+    <tr  border="4px">
+      <th scope="col">The maximum quantity</th>
+                  <th scope="col">The VGZ</th>
+                  <th scope="col">The number of operators</th>
+                  <th scope="col">The Work time</th>
+                  <th scope="col">Average efficiency</th>
+    </tr>
+
+  <tbody>
+    <tr  border="4px">
+      <th scope="row">{{qtmax}}</th>
+      <td>{{vgz}}</td>
+      <td>{{nbop}}</td>
+      <td>{{tv}}</td>
+      <td>{{eff}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+

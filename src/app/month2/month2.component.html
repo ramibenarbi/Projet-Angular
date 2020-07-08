@@ -1,0 +1,37 @@
+<div class='iddd'>
+    <button type="button" class="btn btn-dark"><a style='color:whitesmoke' [routerLink]="['/layout/type2']">
+      Return To Type 2</a></button></div>
+  <div class="style">
+
+    <label>Select year:</label>
+    <input id='ggg' type='text' [(ngModel)]="year" >
+<label>Select month:</label>
+<select class="custom-select" [(ngModel)]="month" >
+  <option value="01">January</option>
+  <option value="02">february</option>
+  <option value="03">march</option>
+  <option value="04">April</option>
+  <option value="05">May</option>
+  <option value="06">June</option>
+  <option value="07">July</option>
+  <option value="08">August</option>
+  <option value="09">september</option>
+  <option value="10">October</option>
+  <option value="11">November</option>
+  <option value="12">December</option>
+</select>
+<br>
+<button class="btn btn-primary" type="submit" (click)="chart()">Click</button>
+</div>
+
+<div>
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+      </canvas>
+    </div>
+

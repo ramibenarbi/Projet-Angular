@@ -1,0 +1,16 @@
+.content-center{
+  margin : auto;
+}
+.ng-valid[required], .ng-valid.valid {
+  border-left: 5px solid #42A948;
+}
+ .ng-invalid:not(form){
+  border-left: 5px solid #a94442;
+}
+#divi{
+  min-width: 300px;
+  min-height: 400px;
+  padding: 50px;
+  background-color: #C5CAE9;
+  border-radius: 16px;
+}
